@@ -120,7 +120,7 @@ haber consignado antes el criterio adoptado para cada parámetro.
   [_Salmonella_ spp. / 25 g], [Positivo], [Ausencia en 25 g], [No conforme],
   [_Staphylococcus aureus_], [> 30], [Pendiente de cierre frente a categoría análoga o especificación interna], [Resultado elevado],
   [_Escherichia coli_], [< 10], [Pendiente de cierre frente a categoría análoga o especificación interna], [Interpretación final pendiente],
-  [Mohos y levaduras], [> 300], [Pendiente según criterio adoptado para estabilidad del producto], [Resultado elevado],
+  [Mohos y levaduras], [> 10], [Pendiente según criterio adoptado para estabilidad del producto], [Resultado elevado],
   [Coliformes en MacConkey], [> 100], [Indicador complementario; no sustitutivo de confirmación], [Indicador higiénico desfavorable],
 )
 
@@ -129,7 +129,7 @@ haber consignado antes el criterio adoptado para cada parámetro.
 Los resultados obtenidos evidencian una condición microbiológica desfavorable
 del producto dentro del alcance analítico evaluado. El hallazgo de mayor peso
 sanitario corresponde a _Salmonella_ spp., ya que el ensayo fue interpretado
-como positivo en la porción analizada. Dado el carácter patógeno de este
+como positivo en la porción analizada ( @figura_4). Dado el carácter patógeno de este
 microorganismo, su detección constituye por sí sola un criterio suficiente de
 no conformidad microbiológica y compromete la aptitud del producto para
 comercialización.
@@ -140,16 +140,14 @@ etapas posteriores al tratamiento aplicado al alimento. Este resultado es
 compatible con fallas en las Buenas Prácticas de Manufactura, en el saneamiento
 de superficies y utensilios, o en la prevención de contaminación posproceso.
 
-Para _Escherichia coli_ se registró un recuento inferior a 10 UFC/g. Aunque
-este valor es menor que los demás indicadores evaluados, su interpretación final
-debe quedar supeditada al criterio de aceptación que se adopte para la categoría
-análoga seleccionada en este informe. En contraste, el recuento de coliformes
-en agar MacConkey superior a 100 UFC/g constituye un indicador operativo
+Para _Escherichia coli_ se registró un recuento inferior a 10 UFC/g ( @figura_1). Aunque
+este valor es menor que los demás indicadores evaluados, la presencia de este en el ensayo duplicado es suficiente para no conformidad con base a los criterios generales expuestos por la Resolución 2674 @res2674. Adiconalmente, el recuento de coliformes
+en agar MacConkey superior a 100 UFC/g ( @figura_2) constituye un indicador operativo
 higiénicamente desfavorable y sugiere deficiencias de control sanitario o
 contaminación posterior al procesamiento.
 
-Por otra parte, el recuento de mohos y levaduras superior a 300 UFC/g indica
-una carga fúngica elevada, compatible con deficiencias de higiene, exposición
+Por otra parte, el recuento de mohos y levaduras superior a 100 UFC/g ( @figura_5) indica
+una carga fúngica leve, compatible con deficiencias de higiene, exposición
 ambiental del producto, condiciones inadecuadas de almacenamiento o una
 estabilidad insuficiente de la formulación frente al deterioro microbiológico.
 En conjunto, los hallazgos analíticos sustentan una interpretación no favorable
@@ -165,13 +163,33 @@ favorable dentro del alcance analítico evaluado.
 
 = Evidencia fotográfica
 
-Sección reservada para la incorporación posterior de las imágenes de placas y
-medios de cultivo. Las referencias internas a figuras deberán actualizarse una
-vez se inserten las evidencias definitivas y su numeración final.
+// Sección reservada para la incorporación posterior de las imágenes de placas y
+// medios de cultivo. Las referencias internas a figuras deberán actualizarse una
+// vez se inserten las evidencias definitivas y su numeración final.
 
 #figure(
-  rect(width: 100%, height: 3cm, stroke: luma(180)),
-  caption: [Espacio reservado para evidencia fotográfica],
-)
+  image("docs/imagenes/EMB.jfif"),
+  caption: [Cultivo en medio EMB (_Escherichia coli_)],
+)<figura_1>
+
+#figure(
+  image("docs/imagenes/macconkey.jfif"),
+  caption: [Cultivo coliformes medio MacConkey]
+)<figura_2>
+
+#figure(
+  image("docs/imagenes/manitol.jfif"),
+  caption: [Cultivo medio Manitol Salado (_Staphylococcus aureus_)]
+) <figura_3>
+
+#figure(
+  image("docs/imagenes/salmonella.jfif"),
+  caption: [Cultivo medio Salmonella Siguella _Salmonella_]
+)<figura_4>
+
+#figure(
+  image("docs/imagenes/sabouraud.jfif"),
+  caption: [Cultivo medio Sabouraud (Mohos y Levaduras)]
+) <figura_5>
 
 #bibliography("docs/referencias.bib")
