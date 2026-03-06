@@ -2,7 +2,7 @@
 
 #show: bubble.with(
   title: "Informe de Análisis Microbiológico",
-  subtitle: "Chorizo vegano a base de lentejas  Asocamprom",
+  subtitle: "Chorizo vegano a base de lentejas — Asocamprom",
   author: "Edgardo Luis Díaz Osorio",
   affiliation: "Proyecto Caribbean — Universidad de Cartagena",
   date: datetime.today().display(),
@@ -30,7 +30,7 @@ Este informe no afirma la existencia de una norma vertical exclusiva para
 "embutido vegano de lentejas". En consecuencia, la interpretación se realiza
 mediante criterios sanitarios y métodos microbiológicos de referencia aplicados
 por analogía técnica a un alimento procesado de origen vegetal con alta
-manipulación y potencial riesgo postproceso.
+manipulación y potencial riesgo posproceso.
 
 = Marco normativo y criterio adoptado
 
@@ -114,59 +114,64 @@ réplicas y criterio de lectura. No se deben emitir conceptos de conformidad sin
 haber consignado antes el criterio adoptado para cada parámetro.
 
 #table(
-  columns: (1.8fr, 1.2fr, 1.8fr, 1.2fr),
+  columns: (1.8fr, 1.2fr, 1.8fr, 1.4fr),
   align: left + horizon,
   [*Determinación*], [*Resultado*], [*Criterio adoptado*], [*Concepto*],
-  [_Salmonella_ spp. / 25 g], [Positivo], [Ausencia en 25 g], [Rechazo],
-  [_Staphylococcus aureus_], [> 30], [Definir contra categoría análoga de Res. 1407/2022 o especificación interna], [Rechazo],
-  [_Escherichia coli_], [< 10], [Definir contra categoría análoga de Res. 1407/2022 o especificación interna], [Marginalmente Aceptable],
-  [Mohos y levaduras], [> 300], [Definir según categoría análoga / estabilidad del producto], [Rechazo],
-  [Coliformes en MacConkey], [> 100], [Criterio interno o complementario, no sustitutivo de confirmación], [Rechazo],
-)
-
-= Evidencia fotográfica
-
-#figure(
-  rect(width: 100%, height: 3cm, stroke: luma(180)),
-  caption: [Reservado para imágenes de placas y medios de cultivo],
+  [_Salmonella_ spp. / 25 g], [Positivo], [Ausencia en 25 g], [No conforme],
+  [_Staphylococcus aureus_], [> 30], [Pendiente de cierre frente a categoría análoga o especificación interna], [Resultado elevado],
+  [_Escherichia coli_], [< 10], [Pendiente de cierre frente a categoría análoga o especificación interna], [Interpretación final pendiente],
+  [Mohos y levaduras], [> 300], [Pendiente según criterio adoptado para estabilidad del producto], [Resultado elevado],
+  [Coliformes en MacConkey], [> 100], [Indicador complementario; no sustitutivo de confirmación], [Indicador higiénico desfavorable],
 )
 
 = Análisis técnico
 
-// La discusión debe construirse sobre tres ejes: riesgo sanitario, higiene de
-// proceso y alcance de la evidencia. La ausencia de _Salmonella_ y recuentos bajos
-// de microorganismos indicadores fortalecen la hipótesis de un proceso higiénico,
-// pero no autorizan afirmaciones absolutas sobre inocuidad integral ni sobre vida
-// útil si no existen datos complementarios de formulación, actividad acuosa,
-// pH, tratamiento térmico, empaque y almacenamiento.
+Los resultados obtenidos evidencian una condición microbiológica desfavorable
+del producto dentro del alcance analítico evaluado. El hallazgo de mayor peso
+sanitario corresponde a _Salmonella_ spp., ya que el ensayo fue interpretado
+como positivo en la porción analizada. Dado el carácter patógeno de este
+microorganismo, su detección constituye por sí sola un criterio suficiente de
+no conformidad microbiológica y compromete la aptitud del producto para
+comercialización.
 
-// En matrices vegetales formuladas como embutido, un error frecuente es forzar la
-// comparación con normas de cárnicos sin justificar la equivalencia funcional de
-// la categoría. Ese atajo es metodológicamente débil. Lo correcto es documentar
-// por qué los microorganismos seleccionados son pertinentes para este producto y
-// explicar de manera explícita cuál criterio oficial o interno se adopta para la
-// interpretación final.
-// 
+En cuanto a _Staphylococcus aureus_, el recuento reportado sugiere deficiencias
+en las condiciones de higiene durante la manipulación, el procesamiento o las
+etapas posteriores al tratamiento aplicado al alimento. Este resultado es
+compatible con fallas en las Buenas Prácticas de Manufactura, en el saneamiento
+de superficies y utensilios, o en la prevención de contaminación posproceso.
 
-De acuerdo con los resultados se obtuvieron diferentes resultados los cuales son comparados con el marco normativo general para alimentos vegetales procesados. Para el caso de _Salmonella_, la presencia de colonias con viraje color negro del medio #highlight([Figura]), es característico de la presencia de cepas sulfito reductoras de _Salmonella_ dando como positivo para la presencia de patógenos en el producto. De igual manera, el cambio de color presente en el medio de cultivo Manitol Salado #highlight([Figura]) presnte en el ensayo es positivo para la presencia de _Staphylococcus aureus_; dichos resultados en conjunto dan inferir fallos críticos en las prácticas de manufactura y esterilización, lo cual implica una revisión de los métodos utilizados.
+Para _Escherichia coli_ se registró un recuento inferior a 10 UFC/g. Aunque
+este valor es menor que los demás indicadores evaluados, su interpretación final
+debe quedar supeditada al criterio de aceptación que se adopte para la categoría
+análoga seleccionada en este informe. En contraste, el recuento de coliformes
+en agar MacConkey superior a 100 UFC/g constituye un indicador operativo
+higiénicamente desfavorable y sugiere deficiencias de control sanitario o
+contaminación posterior al procesamiento.
 
-De forma paralela se encontró crecimiento de colonias con tonalidad verde brillante en el medio de cultivo EMB, como se puede ver en #highlight([Figura]),  característico de _Escherichia coli_ y la presencia de colonias en el medio de cultivo MacConkey, lo cual indica la presencia de entero patógenos, dicho resultado apunta a contaminación por parte de aguas residuales.
-
-Por último, como se puede observar en la #highlight([Figura]), el crecimiento de colonias en el medio de cultivo Sabouraud indica la presencia de levaduras en cantidades superiores a lo establecido por la norma, lo cual plantea la hipótesis de fallas multiples en la aplicación de normas sanitarias al momento de procesar el producto. 
+Por otra parte, el recuento de mohos y levaduras superior a 300 UFC/g indica
+una carga fúngica elevada, compatible con deficiencias de higiene, exposición
+ambiental del producto, condiciones inadecuadas de almacenamiento o una
+estabilidad insuficiente de la formulación frente al deterioro microbiológico.
+En conjunto, los hallazgos analíticos sustentan una interpretación no favorable
+del desempeño microbiológico del lote evaluado.
 
 = Conclusión técnica
 
 Bajo las condiciones del muestreo y para los parámetros microbiológicos
 ensayados, la muestra de chorizo vegano a base de lentejas presentó resultados
-*no conforme* frente a los criterios adoptados en este informe,
-por lo cual su aptitud microbiológica para comercialización se interpreta de
-manera *no favorable* dentro del alcance analítico evaluado.
+no conformes frente a los criterios adoptados en este informe, por lo cual su
+aptitud microbiológica para comercialización se interpreta de manera no
+favorable dentro del alcance analítico evaluado.
 
-// = Evidencia fotográfica
+= Evidencia fotográfica
 
-// #figure(
-//   rect(width: 100%, height: 3cm, stroke: luma(180)),
-//   caption: [Reservado para imágenes de placas y medios de cultivo],
-// )
+Sección reservada para la incorporación posterior de las imágenes de placas y
+medios de cultivo. Las referencias internas a figuras deberán actualizarse una
+vez se inserten las evidencias definitivas y su numeración final.
+
+#figure(
+  rect(width: 100%, height: 3cm, stroke: luma(180)),
+  caption: [Espacio reservado para evidencia fotográfica],
+)
 
 #bibliography("docs/referencias.bib")
