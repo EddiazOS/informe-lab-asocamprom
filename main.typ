@@ -2,7 +2,7 @@
 
 #show: bubble.with(
   title: "Informe de Análisis Microbiológico",
-  subtitle: "Chorizo vegano a base de lentejas — Asocamprom",
+  subtitle: "Chorizo vegano a base de lentejas  Asocamprom",
   author: "Edgardo Luis Díaz Osorio",
   affiliation: "Proyecto Caribbean — Universidad de Cartagena",
   date: datetime.today().display(),
@@ -115,41 +115,14 @@ haber consignado antes el criterio adoptado para cada parámetro.
 
 #table(
   columns: (1.8fr, 1.2fr, 1.8fr, 1.2fr),
-  align: left,
+  align: left + horizon,
   [*Determinación*], [*Resultado*], [*Criterio adoptado*], [*Concepto*],
-  [_Salmonella_ spp. / 25 g], [Pendiente], [Ausencia en 25 g], [Pendiente],
-  [_Staphylococcus aureus_], [Pendiente], [Definir contra categoría análoga de Res. 1407/2022 o especificación interna], [Pendiente],
-  [_Escherichia coli_], [Pendiente], [Definir contra categoría análoga de Res. 1407/2022 o especificación interna], [Pendiente],
-  [Mohos y levaduras], [Pendiente], [Definir según categoría análoga / estabilidad del producto], [Pendiente],
-  [Coliformes en MacConkey], [Pendiente], [Criterio interno o complementario, no sustitutivo de confirmación], [Pendiente],
+  [_Salmonella_ spp. / 25 g], [Positivo], [Ausencia en 25 g], [Rechazo],
+  [_Staphylococcus aureus_], [> 30], [Definir contra categoría análoga de Res. 1407/2022 o especificación interna], [Rechazo],
+  [_Escherichia coli_], [< 10], [Definir contra categoría análoga de Res. 1407/2022 o especificación interna], [Marginalmente Aceptable],
+  [Mohos y levaduras], [> 300], [Definir según categoría análoga / estabilidad del producto], [Rechazo],
+  [Coliformes en MacConkey], [> 100], [Criterio interno o complementario, no sustitutivo de confirmación], [Rechazo],
 )
-
-= Análisis técnico
-
-La discusión debe construirse sobre tres ejes: riesgo sanitario, higiene de
-proceso y alcance de la evidencia. La ausencia de _Salmonella_ y recuentos bajos
-de microorganismos indicadores fortalecen la hipótesis de un proceso higiénico,
-pero no autorizan afirmaciones absolutas sobre inocuidad integral ni sobre vida
-útil si no existen datos complementarios de formulación, actividad acuosa,
-pH, tratamiento térmico, empaque y almacenamiento.
-
-En matrices vegetales formuladas como embutido, un error frecuente es forzar la
-comparación con normas de cárnicos sin justificar la equivalencia funcional de
-la categoría. Ese atajo es metodológicamente débil. Lo correcto es documentar
-por qué los microorganismos seleccionados son pertinentes para este producto y
-explicar de manera explícita cuál criterio oficial o interno se adopta para la
-interpretación final.
-
-= Conclusión técnica
-
-La conclusión debe redactarse solo después de completar resultados y criterio de
-aceptación. Se recomienda usar una fórmula conservadora como la siguiente:
-
-"Bajo las condiciones del muestreo y para los parámetros microbiológicos
-ensayados, la muestra de chorizo vegano a base de lentejas presentó resultados
-[conformes / no conformes] frente a los criterios adoptados en este informe,
-por lo cual su aptitud microbiológica para comercialización se interpreta de
-manera [favorable / no favorable] dentro del alcance analítico evaluado."
 
 = Evidencia fotográfica
 
@@ -157,5 +130,43 @@ manera [favorable / no favorable] dentro del alcance analítico evaluado."
   rect(width: 100%, height: 3cm, stroke: luma(180)),
   caption: [Reservado para imágenes de placas y medios de cultivo],
 )
+
+= Análisis técnico
+
+// La discusión debe construirse sobre tres ejes: riesgo sanitario, higiene de
+// proceso y alcance de la evidencia. La ausencia de _Salmonella_ y recuentos bajos
+// de microorganismos indicadores fortalecen la hipótesis de un proceso higiénico,
+// pero no autorizan afirmaciones absolutas sobre inocuidad integral ni sobre vida
+// útil si no existen datos complementarios de formulación, actividad acuosa,
+// pH, tratamiento térmico, empaque y almacenamiento.
+
+// En matrices vegetales formuladas como embutido, un error frecuente es forzar la
+// comparación con normas de cárnicos sin justificar la equivalencia funcional de
+// la categoría. Ese atajo es metodológicamente débil. Lo correcto es documentar
+// por qué los microorganismos seleccionados son pertinentes para este producto y
+// explicar de manera explícita cuál criterio oficial o interno se adopta para la
+// interpretación final.
+// 
+
+De acuerdo con los resultados se obtuvieron diferentes resultados los cuales son comparados con el marco normativo general para alimentos vegetales procesados. Para el caso de _Salmonella_, la presencia de colonias con viraje color negro del medio #highlight([Figura]), es característico de la presencia de cepas sulfito reductoras de _Salmonella_ dando como positivo para la presencia de patógenos en el producto. De igual manera, el cambio de color presente en el medio de cultivo Manitol Salado #highlight([Figura]) presnte en el ensayo es positivo para la presencia de _Staphylococcus aureus_; dichos resultados en conjunto dan inferir fallos críticos en las prácticas de manufactura y esterilización, lo cual implica una revisión de los métodos utilizados.
+
+De forma paralela se encontró crecimiento de colonias con tonalidad verde brillante en el medio de cultivo EMB, como se puede ver en #highlight([Figura]),  característico de _Escherichia coli_ y la presencia de colonias en el medio de cultivo MacConkey, lo cual indica la presencia de entero patógenos, dicho resultado apunta a contaminación por parte de aguas residuales.
+
+Por último, como se puede observar en la #highlight([Figura]), el crecimiento de colonias en el medio de cultivo Sabouraud indica la presencia de levaduras en cantidades superiores a lo establecido por la norma, lo cual plantea la hipótesis de fallas multiples en la aplicación de normas sanitarias al momento de procesar el producto. 
+
+= Conclusión técnica
+
+Bajo las condiciones del muestreo y para los parámetros microbiológicos
+ensayados, la muestra de chorizo vegano a base de lentejas presentó resultados
+*no conforme* frente a los criterios adoptados en este informe,
+por lo cual su aptitud microbiológica para comercialización se interpreta de
+manera *no favorable* dentro del alcance analítico evaluado.
+
+// = Evidencia fotográfica
+
+// #figure(
+//   rect(width: 100%, height: 3cm, stroke: luma(180)),
+//   caption: [Reservado para imágenes de placas y medios de cultivo],
+// )
 
 #bibliography("docs/referencias.bib")
