@@ -118,9 +118,9 @@ haber consignado antes el criterio adoptado para cada parámetro.
   align: left + horizon,
   [*Determinación*], [*Resultado*], [*Criterio adoptado*], [*Concepto*],
   [_Salmonella_ spp. / 25 g], [Positivo], [Ausencia en 25 g], [No conforme],
-  [_Staphylococcus aureus_], [> 30], [Pendiente de cierre frente a categoría análoga o especificación interna], [Resultado elevado],
-  [_Escherichia coli_], [< 10], [Pendiente de cierre frente a categoría análoga o especificación interna], [Interpretación final pendiente],
-  [Mohos y levaduras], [> 10], [Pendiente según criterio adoptado para estabilidad del producto], [Resultado elevado],
+  [_Staphylococcus aureus_], [> 30], [>10], [Resultado elevado],
+  [_Escherichia coli_], [< 10], [< 10/ c = 1], [no conforme],
+  [Mohos y levaduras], [> 100], [>100], [Resultado elevado],
   [Coliformes en MacConkey], [> 100], [Indicador complementario; no sustitutivo de confirmación], [Indicador higiénico desfavorable],
 )
 
